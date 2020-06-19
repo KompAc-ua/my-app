@@ -1,0 +1,10 @@
+.nav {
+  background: red;
+  grid-area: n;
+}
+.item {
+  color: green;
+}
+.hover {
+  background-color: #fff;
+}
