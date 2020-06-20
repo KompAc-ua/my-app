@@ -2,17 +2,9 @@
   display: grid;
   grid-template-columns: 2fr 10fr;
 }
-.dialogItems {
-  padding: 10px;
-}
-.dialogItems .activ {
-  color: gold;
-}
 .dialog {
   padding: 5px;
 }
 .messages {
-  padding: 10px;
-}
-.message {
+  background: cornflowerblue;
 }

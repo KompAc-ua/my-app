@@ -1,0 +1,23 @@
+[33mcommit 137bb7ff960b37bf280e32d5c3063a9af7ee7162[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: KompAc-ua <nsvsergey18@gmail.com>
+Date:   Fri Jun 19 23:31:44 2020 +0300
+
+    22.Add changes navbar and dialogs, routing
+
+[33mcommit 4d7117588620f8323b9d3f23f18bb1a0ed2e0f5e[m
+Author: KompAc-ua <nsvsergey18@gmail.com>
+Date:   Fri Jun 19 19:51:27 2020 +0300
+
+    15.Folder structure, new modules
+
+[33mcommit b1f4bfc1c72db9b49d995a8ea0ed79cb1480ecdc[m
+Author: KompAc-ua <nsvsergey18@gmail.com>
+Date:   Fri Jun 19 18:38:31 2020 +0300
+
+    14.Lesson Add css modules
+
+[33mcommit fc16f73bc83e6ceb629f5f7655593d212e2b109a[m
+Author: KompAc-ua <nsvsergey18@gmail.com>
+Date:   Fri Jun 19 17:43:11 2020 +0300
+
+    Skelet created
