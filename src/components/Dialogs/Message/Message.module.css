@@ -2,3 +2,11 @@
   color: blueviolet;
   padding: 10px;
 }
+.me {
+  text-align: right;
+  background: burlywood;
+}
+.friend {
+  text-align: left;
+  background: cyan;
+}
