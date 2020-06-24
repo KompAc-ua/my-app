@@ -1,0 +1,12 @@
+.friends img {
+  width: 45px;
+  transition: transform 0.15s linear;
+  margin: 5px;
+}
+.friends img:hover {
+  /* width: 70px; */
+  transform: scale(1.5);
+}
+.friends {
+  display: inline-block;
+}

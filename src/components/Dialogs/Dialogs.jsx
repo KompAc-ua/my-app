@@ -22,27 +22,28 @@ import Message from './Message/Message';
 // let messagesElements = messageData.map(message => <Message message={message.message} />);
 
 const Dialogs = (props) => {
-    let dialogElements = props.state.dialogsData.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />);
-    let messagesElements = props.state.messageData.map(message => <Message message={message.message} who={message.who} />);
+    let newMessageElement = React.createRef();
+    let wroteMessage = () => {
+        let text = newMessageElement.current.value;
+        props.newMessage(text);
+    }
+    let onMessageChange = () => {
+        let text = newMessageElement.current.value;
+        props.updateNewMessageText(text);
+    }
+    let dialogElements = props.dialogsPage.dialogsData.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />);
+    let messagesElements = props.dialogsPage.messageData.map(message => <Message message={message.message} who={message.who} />);
     return (
         <div className={classes.dialogs}>
             <div className={classes.dialogItems}>
-                {/* <DialogItem name={dialogsData[0].name} id={dialogsData[0].id} />
-                <DialogItem name={dialogsData[1].name} id={dialogsData[1].id} />
-                <DialogItem name={dialogsData[2].name} id={dialogsData[2].id} />
-                <DialogItem name={dialogsData[3].name} id={dialogsData[3].id} /> */}
                 {dialogElements}
-                {/* {props.d.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />)} */}
+
             </div>
 
             <div className={classes.messages}>
-
-                {/* <MessageItem message={messageData[0].message} />
-                <MessageItem message={messageData[1].message} />
-                <MessageItem message={messageData[2].message} />
-                <MessageItem message={messageData[3].message} /> */}
-
                 {messagesElements}
+                <textarea ref={newMessageElement} onChange={onMessageChange} value={props.dialogsPage.newMessageText}></textarea>
+                <button onClick={wroteMessage}>Message</button>
             </div>
         </div>
     )

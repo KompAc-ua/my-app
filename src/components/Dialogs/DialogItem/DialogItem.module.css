@@ -1,10 +1,14 @@
 .dialogItems {
   padding: 10px;
+  background: black;
+  margin: 5px;
 }
 .dialogItems .activ {
   color: gold;
 }
-img {
+.dialogItems img {
   width: 30px;
   border-radius: 15px;
+  float: left;
+  margin-right: 5px;
 }
