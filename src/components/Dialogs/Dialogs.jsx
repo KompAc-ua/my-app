@@ -25,11 +25,11 @@ const Dialogs = (props) => {
     let newMessageElement = React.createRef();
     let wroteMessage = () => {
         let text = newMessageElement.current.value;
-        props.newMessage(text);
+        props.dispatch({ type: 'NEW-MESSAGE' });
     }
     let onMessageChange = () => {
         let text = newMessageElement.current.value;
-        props.updateNewMessageText(text);
+        props.dispatch({ type: 'UPDATE-NEW-MESSAGE-TEXT', newText: text });
     }
     let dialogElements = props.dialogsPage.dialogsData.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />);
     let messagesElements = props.dialogsPage.messageData.map(message => <Message message={message.message} who={message.who} />);
